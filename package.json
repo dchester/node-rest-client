@@ -1,0 +1,11 @@
+{
+  "name": "node-services-client",
+  "description": "REST client for web services",
+  "version": "0.0.1",
+  "author": "David Chester <david@shutterstock.com>",
+  "main": "./lib/services",
+  "dependencies": {
+    "request": "*",
+    "config": "*"
+  }
+}
