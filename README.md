@@ -34,22 +34,22 @@ services.github.get({
 
 ## Methods
 
-#### get(options), post(options), put(options), delete(options), head(options)
+### get(), post(), put(), delete(), head()
 
 Make an HTTP request to the service, given options as described below.
 
-###### url
+##### url
 
 The path component of the URL.  URLs may have sinatra-style interpolation tokens to be filled in by values from `query`.
 
-###### query
+##### query
 
 Object representing query string parameters to be sent with the request.
 
-###### success
+##### success
 
 Callback to be executed upon success, with the deserialized response as the first parameter, followed by the full response object.
 
-###### error
+##### error
 
 Callback to be executed upon failure, with the deserialized response as the first parameter, followed by the full response object.
