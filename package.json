@@ -1,11 +1,11 @@
 {
-  "name": "node-services-client",
-  "description": "REST client for web services",
+  "name": "rest-client",
+  "description": "A high-level HTTP / REST client for Node",
   "version": "0.0.1",
-  "author": "David Chester <david@shutterstock.com>",
-  "main": "./lib/services",
+  "author": "David Chester <dchester@shutterstock.com>",
+  "main": "./lib/Client",
   "dependencies": {
     "request": "*",
-    "config": "*"
+    "log4js": "*"
   }
 }
