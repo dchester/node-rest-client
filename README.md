@@ -6,13 +6,14 @@ A high-level HTTP / REST services client for Node.
 
 Set up a client and issue a GET request:
 
-```
+```javascript
 var Client = require('rest-client');
 
 var github = new Client('http://api.github.com');
 
 github.get({
-	url: '/orgs/shutterstock',
+	url: '/orgs/:organization',
+	params: { organization: 'shutterstock' },
 	success: function(organization) {
 		// do something
 	}
@@ -94,14 +95,14 @@ Register backend services with a call to **register()**, sending a `name` parame
 ```javascript
 var services = require('rest-client-registry');
 
-services.register({
-	name: 'github',
-	base: 'http://api.github.com'
+services.register('github', {
+	base: 'http://api.github.com',
+	timeout: 5000
 });
 
-services.register({
+services.register('metacpan', {
 	name: 'metacpan',
-	base: 'http://api.metacpan.org'
+	timeout: 5000
 });
 
 ```
