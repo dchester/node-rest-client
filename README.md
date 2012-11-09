@@ -101,7 +101,7 @@ services.register('github', {
 });
 
 services.register('metacpan', {
-	name: 'metacpan',
+	base: 'http://api.metacpan.org',
 	timeout: 5000
 });
 
